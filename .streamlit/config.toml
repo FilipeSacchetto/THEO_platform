@@ -1,0 +1,8 @@
+[server]
+# No practical upload limit (units are MB): the methodology accepts databases
+# of any size, so the default 200 MB cap is raised far beyond any real dataset.
+maxUploadSize = 50000
+maxMessageSize = 50000
+
+[browser]
+gatherUsageStats = false

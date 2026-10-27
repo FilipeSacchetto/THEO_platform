@@ -1,0 +1,21 @@
+2026-10-27 17:39:00 | INFO     | theo | Logging to /Users/filipesacchetto/Documents/GitHub/Mestrado/THEO_platform/logs/theo_20261027_173900.log
+2026-10-27 17:40:36 | INFO     | theo.app | Run requested | model=lstm | window=24 | epochs=10 | seed=42 | train_frac=0.70 | val_frac=0.85 | device=auto
+2026-10-27 17:40:36 | INFO     | theo.pipeline | Run start | model=lstm | rows=31824 | entities=68 | window=24 | epochs=10 | seed=42 | device=mps | target=ALLSKY_SFC_SW_DWN | node_features=[] | edge_features=[]
+2026-10-27 17:40:36 | INFO     | theo.preprocessing.theo_graph | THEO graph built | entities=68 | delaunay_edges=190 | time_steps=468 | rows=88920 | variables=['PS', 'RH2M', 'T2M', 'WS10M', 'ALLSKY_SFC_SW_DWN']
+2026-10-27 17:40:36 | INFO     | theo.pipeline | THEO built | n_features=10 | entity=source | target=target
+2026-10-27 17:40:36 | INFO     | theo.pipeline | Split | unique_times=468 | train_cutoff=24136.0 | val_cutoff=24206.0 | train_frac=0.70 | val_frac=0.85
+2026-10-27 17:40:36 | INFO     | theo.data.loader | Aggregated 88920 edge-level rows -> 25272 (entity, time) rows (entity=source, time=time_key, target=target)
+2026-10-27 17:40:36 | INFO     | theo.pipeline | Windows | 54 | train=16416 val=3780 test=3780 | features=10
+2026-10-27 17:40:40 | INFO     | theo.training.engine | Epoch 1/10 | val_rmse=0.59932 | val_r2=0.6573 | best
+2026-10-27 17:40:41 | INFO     | theo.training.engine | Epoch 2/10 | val_rmse=0.63611 | val_r2=0.6139
+2026-10-27 17:40:43 | INFO     | theo.training.engine | Epoch 3/10 | val_rmse=0.58176 | val_r2=0.6771 | best
+2026-10-27 17:40:45 | INFO     | theo.training.engine | Epoch 4/10 | val_rmse=0.60110 | val_r2=0.6553
+2026-10-27 17:40:47 | INFO     | theo.training.engine | Epoch 5/10 | val_rmse=0.55683 | val_r2=0.7042 | best
+2026-10-27 17:40:49 | INFO     | theo.training.engine | Epoch 6/10 | val_rmse=0.59185 | val_r2=0.6658
+2026-10-27 17:40:51 | INFO     | theo.training.engine | Epoch 7/10 | val_rmse=0.55479 | val_r2=0.7063 | best
+2026-10-27 17:40:52 | INFO     | theo.training.engine | Epoch 8/10 | val_rmse=0.55671 | val_r2=0.7043
+2026-10-27 17:40:54 | INFO     | theo.training.engine | Epoch 9/10 | val_rmse=0.57601 | val_r2=0.6834
+2026-10-27 17:40:56 | INFO     | theo.training.engine | Epoch 10/10 | val_rmse=0.59264 | val_r2=0.6649
+2026-10-27 17:40:56 | INFO     | theo.training.engine | Best epoch selected | val_rmse=0.55479
+2026-10-27 17:40:56 | INFO     | theo.pipeline | Run done | val={'rmse': 0.5547859546801922, 'mae': 0.4230581794097598, 'r2': 0.7063331444250351} | test={'rmse': 0.5249440716695098, 'mae': 0.4107687009099982, 'r2': 0.5651408767859225} | test_pairs=3780
+2026-10-27 17:40:56 | INFO     | theo.app | Run finished | test={'rmse': 0.5249440716695098, 'mae': 0.4107687009099982, 'r2': 0.5651408767859225} | val={'rmse': 0.5547859546801922, 'mae': 0.4230581794097598, 'r2': 0.7063331444250351}
